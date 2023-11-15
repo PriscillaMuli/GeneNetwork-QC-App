@@ -19,6 +19,43 @@ The requirements that must be met are as follows:
 
 The tests folder makes sure the code is doing the right thing while the scripts folder provides ways to invoke the code and the quality control folder verifies that the data is correct. The quality control folder is the "core" of the application.
 
+The tests directory contains 4 subdirectories and 2 Python modules. Within the qc subdirectory are 6 Python modules:
+ ```markdown
+1. Init.py
+Implement tests and stubs for functions under test
+```
+```markdown 
+2. test_cells.py
+Checks that the cell values meet and fulfil required criteria.
+Modules include random, hypothesis and quality control
+Functions include: test_cell_value_errors_with_invalid_inputs2(num_str), test_cell_average_value_errors_if_not_three_decimal_places2(num_str), test_cell_average_value_pass_if_three_decimal_places(num_str), test_cell_standard_error_value_errors_if_less_than_six_decimal_places2(num_str), test_cell_standard_error_value_pass_if_six_or_more_decimal_places(num_str)
+
+```
+```markdown 
+3. test_cells_average.py
+Tests average values
+Modules include: random, hypothesis and quality control
+Functions include: test_cell_average_value_pass_if_no_decimal_places(num_str), 
+```
+```markdown 
+4. test_cells_standard_error.py
+Tests standard error values
+Modules include: random, hypothesis and quality control
+Functions include: test_cell_standard_error_value_errors_if_less_than_six_decimal_places2(num_str)
+```
+```markdown
+5. test_error_collection
+Inspects that the error collection works as it should
+Modules include: quality control
+Functions include: test_take(sample, num, expected), test_collect_errors(filepath, filetype, strains, count), test_collect_inconsistent_column_errors(filepath, filetype, strains, expected)
+```
+```markdown
+6. test_header.py
+Tests the parsing of headers
+Modules include: hypothesis, quality control
+Functions include:test_invalid_header_with_list_of_one_value(headers), test_invalid_headings_with_invalid_inputs(headings), test_invalid_header_with_valid_headers(headers), test_invalid_headings_with_valid_headings(strains, headings), test_duplicate_headers_with_repeated_column_headings(headers, repeated), test_duplicate_headers_with_unique_column_headings(headers)
+```
+
 The quality control directory contains 8 Python modules as follows:
  ```markdown
 1. Init.py
