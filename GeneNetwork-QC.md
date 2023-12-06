@@ -19,7 +19,7 @@ The requirements that must be met are as follows:
 
 The  application consists of 3 folders: the testes, scripts and quality control folders. The tests folder makes sure the code is doing the right thing while the scripts folder provides ways to invoke the code and the quality control folder verifies that the data is correct. The quality control folder is the "core" of the application.
 
-The tests directory contains 4 subdirectories and 2 Python modules. Within the qc subdirectory are 6 Python modules:
+The tests directory contains 4 subdirectories and 2 Python modules. Within the quality control subdirectory in the tests directory are 6 Python modules:
  ```markdown
 1. Init.py
 -Implement tests and stubs for functions under test
@@ -81,7 +81,7 @@ The quality control directory contains 8 Python modules as follows:
 ```
 ```markdown 
 5. headers.py
--Validates headers and each header must contain 2 column names
+-Validates headers and each header must contain 2 columns
 -Modules used include functools, typing
 -Functions used include invalid_header, invalid_headings, duplicate_headings
 ```
