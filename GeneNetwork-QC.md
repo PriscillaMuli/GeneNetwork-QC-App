@@ -17,7 +17,7 @@ The requirements that must be met are as follows:
 **Suggestions on what I would do differently if I were to write an uploader myself:**
 1. To enable other file formats to be accepted, I would provide an option to convert file formats into TSV files so that the uploader accepts them.
 
-The  application consists of 3 folders: the testes, scripts and quality control folders. The tests folder makes sure the code is doing the right thing while the scripts folder provides ways to invoke the code and the quality control folder verifies that the data is correct. The quality control folder is the "core" of the application.
+The  application consists of 3 folders: the testes, scripts and quality control folders. The tests folder makes sure the code is doing the right thing while the scripts folder provides ways to invoke the code on the command line and the quality control folder, which is the core of the application, ensures that the data is correct. 
 
 The tests directory contains 4 subdirectories and 2 Python modules. Within the quality control subdirectory in the tests directory are 6 Python modules:
  ```markdown
