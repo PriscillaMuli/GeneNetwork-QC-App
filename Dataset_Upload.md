@@ -6,5 +6,5 @@ The main focus of the research is on triple negative breast cancer (TNBC) which 
 
 1. Converted the dataset from Excel file type to CSV file type which is a supported file type with the uploader.
 2. Ensured the first row in the matrix contains the headings to so that the dataset complies with the system requirements.
-3. Uploaded the phenotype matrix to the uploader.
+3. Uploaded the phenotype matrix data to the uploader.
 4. No errors were found.
